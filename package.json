@@ -1,0 +1,23 @@
+{
+  "name": "stack-emulator",
+  "version": "1.0.0",
+  "description": "In This we have used HTML,BOOTSTRAP,JS,NODE WITH EXPRESS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madhan-Sai-MM/STACK-EMULATOR.git"
+  },
+  "author": "madhan mm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Madhan-Sai-MM/STACK-EMULATOR/issues"
+  },
+  "homepage": "https://github.com/Madhan-Sai-MM/STACK-EMULATOR#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
