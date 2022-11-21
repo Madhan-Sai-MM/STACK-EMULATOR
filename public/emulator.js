@@ -1,24 +1,21 @@
-array = [];
-function push() {
-    var ip = document.getElementById("ip");
-    array.push(ip.value);
-    InputDeviceInfo.value = "";
-    document.getElementById("answer").innerHTML = array.join(",");
-    //METHOD : 2
-    // var a = document.getElementById("answer");
-    // var ip = document.getElementById("ip");
-    // var newvar = document.createElement("newvar");
-    // newvar.setAttribute('id', ip.value);
-    // newvar.appendChild(document.createTextNode(ip.value));
-    // a.appendChild(newvar);
-}
+const ip = document.getElementById("ip");
+const anss = document.getElementById("answer");
+const pushbtn = document.getElementById("pushBtn");
+const popbtn = document.getElementById("popBtn");
 
-function pop() { 
+array = [];
+
+pushbtn.addEventListener("click", function(){
+    array.push(ip.value);
+    // if the input is empty it will alert this text;
+    if(!ip.value){
+        alert("Enter Something")
+    }
+    anss.innerHTML = array;
+    ip.value = '';
+})
+
+popbtn.addEventListener("click", function(){
     array = array.slice(0,-1);
-    document.getElementById("answer").innerHTML = array.join(",");
-    //METHOD : 2
-    // var a = document.getElementById("answer");
-    // var ip = document.getElementById("ip");
-    // var remove= document.getElementById(ip.value);
-    // a.removeChild(remove);
-}
+    anss.innerHTML = array;
+})
