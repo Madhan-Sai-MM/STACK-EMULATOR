@@ -7,6 +7,7 @@ array = [];
 
 pushbtn.addEventListener("click", function(){
     array.push(ip.value);
+
     // if the input is empty it will alert this text;
     if(!ip.value){
         alert("Enter Something")
