@@ -17,6 +17,6 @@ pushbtn.addEventListener("click", function(){
 })
 
 popbtn.addEventListener("click", function(){
-    array = array.slice(0,-1);
+    array = array.slice(0,-1);//we can use pop(), but it dont delete last element
     anss.innerHTML = array;
 })
